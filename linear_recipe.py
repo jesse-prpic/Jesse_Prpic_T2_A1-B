@@ -4,9 +4,9 @@ def linear_search(arr, target):
             return i
     return -1
 
-# Example list of grocery store ingredients in alphabetical order
+# Example list of grocery store ingredients unsorted
 ingredients = [
-    "apples", "bananas", "carrots", "eggs", "flour", "milk", "prawns", "tomatoes", "yogurt"
+    "apples", "milk", "carrots", "eggs", "prawns", "tomatoes", "yogurt", "bananas", "flour",
 ]
 
 # Ingredient to search for
