@@ -1,37 +1,20 @@
 # Jesse_Prpic_T2_A1-B
 
-## Question 1
-### Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance / efficiency (i.e Big O)
+## Q1
 
-Algorithms play a fundamental role when it comes to computer science, whether this is to do with sorting or searching algorithms. Sorting algorithm is the process of data being processes and arranged systematically with a specific critieria; this critiera is usually in either ascending or descending order whether that being alphabetical, numerical or alphanumerical (workat.tech, n.d.).
-For example you may have a data that is undersorted and may look like this {4, 89, 23, 19, 8, 77} and with sorting in ascending order this would more like {4, 8, 19, 23, 77, 89}.
+Algorithms are fundamental in computer science, playing crucial roles in tasks such as sorting and searching. A sorting algorithm systematically arranges data according to specific criteria, typically in ascending or descending order, whether alphabetical, numerical, or alphanumeric (Workat.tech, n.d.). For example, an unsorted dataset like {4, 89, 23, 19, 8, 77} can be sorted in ascending order to become {4, 8, 19, 23, 77, 89}.
 
-Within computer science there are a mutlituide of different types of algorthims and in this workbook we will be speaking about sorting algorithms and in particular Merge and Quick sort algorithms which both work as a divide and concur comparison based process (GeeksforGeeks, 2024).
+In computer science, there are a multitude of sorting algorithms, each with their own approach and efficiency. This discussion focuses on two prominent sorting algorithms: Merge Sort and Quick Sort. Both algorithms employ a divide-and-conquer strategy, yet they differ significantly in their implementation and performance (GeeksforGeeks, 2024).
 
-As mentioned; Merge and Quick sort work in a similar way with having comparison of the data and prcoessing this data in a divide and conquer algoirthm, however although they may be similar they have different approaches when it comes to the approach and performance.
+Quick Sort operates by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays: one with elements less than that of the pivot and one with elements greater. The algorithm continues to do this recursively and sorts the sub-arrays until the entire array is sorted. Quick Sort is particularly efficient for smaller datasets due to its in-place sorting nature, which requires minimal additional storage (Dipen Dadhaniya, 2024).
 
-The quick sort algorithms works by selecting an element from an array which is called a "pivot", this then partitions the other elements in two sub-arrays and is dependant of whether they are less or greater than the pivot. This process will be sorted recursively until the algorithm is completed. This method of algorithm is powerful and efficent when it comes to smaller datasets as this can be contributed to that it is an in-place sorting method which means that it only required small contact additional storage.
+Merge Sort, on the other hand, divides the dataset into halves recursively, sorts each half, and then merges the sorted halves back together. Unlike Quick Sort, Merge Sort is not an in-place algorithm and requires additional memory to perform the merging. Despite its higher memory usage, Merge Sort is favoured for its consistent performance and stability, as it guarantees O(n log n) time complexity across all cases (Dipen Dadhaniya, 2024).
 
-<!-- Where is it used -->
-<!-- Example of code of this algorithm 1 -->
-<!-- Benefits and cons of algorithm 1 -->
+While both algorithms use a divide-and-conquer approach, their differences in handling data and memory usage leads to distinct advantages and trade-offs. Quick Sort's in-place sorting and efficiency make it suitable for scenarios where memory is a constraint, it allows a O(n log n) time complexity in most cases however can go down to O(n^2) in worst case scenarios (Bisht, 2023). Meanwhile in comparison, Merge Sort’s stability and predictable performance make it ideal for applications requiring reliable sorting, despite the additional memory requirements, due to this it operates on O(n log n) and provides consistent speed with any size of dataset (Bisht, 2023).
 
-<!-- What is sorting algorithm 2 -->
-Like quick sort, merge sort is also an efficent algorithm however has a different approach where it divides the dataset in halves recursively and then merges the sorted halves, due to this process the merge sort algorithm is unable to be an in-place sort and requires more additional memory.
-<!-- How does it work -->
-<!-- Where is it used -->
-<!-- Example of code of this algorithm 2 -->
-<!-- Benefits and cons of algorithm 2 -->
+In conclusion; the two algorithms are based on their time complexity and the restraints on how their efficiency is on the type of dataset that is being implemented; whether the algorithm has memory, performance and stability needs.
 
-
-<!-- Comparison of each -->
-<!-- Summary of both  -->
-
-
-## Question 2
-
-### Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e Big O)
-
+## Q2
 
 Imagine you need to find a specific recipe in an online directory. You could use different search algorithms to find it, and choosing the right one depends on the situation. Let’s compare Linear Search and Binary Search in this context.
 
@@ -53,7 +36,7 @@ Linear Search is particularly effective for small lists or simple datasets, wher
 Binary Search is a more efficient algorithm for sorted lists, employing a "divide and conquer" approach. It repeatedly divides the search interval in half, which significantly speeds up the search process for large datasets (Nibesh Khadka, 2024).
 Unlike Linear Search, this algorithm is required to be sorted; here’s how it would work with the recipe example:
 
-Process: if you were searching for a specific recipe in a sorted directory of recipes, Binary Search would start by checking the middle recipe. 
+Process: if you were searching for a specific recipe in a sorted directory of recipes, Binary Search would start by checking the middle recipe.
 Efficiency: The time complexity of Binary Search is 0(log n), this means that the algorithm is much faster for larger and sorted lists, it significantly reduces the number of iterations of comparisons compared to Linear Search (Codecademy, n.d.).
 
 Use case: Based on the example of searching for prawns in a recipe; as "p" is the 16th letter in the alphabet, the algorithm would find the middle of the dataset and search either the left or right half of the list (Agarwal, 2021). In this example with 26 letters, the middle being the 13th letter (m), it would search to the right of the list and repeat halving the search. This halving process continues until the desired recipe is found or the search interval is empty, making the search much faster compared to a Linear Search (Agarwal, 2021).
@@ -62,12 +45,13 @@ An example of this code would be;
 
 ![alt text](Images/binary_recipe.png)
 
-Similar to linear search; binary search also offers advantages and drawbacks. By having the time complexity of O(log)n, this makes the efficicency of the search much more supreme with large and sorted data as it can zero in on the taget value. However, although having the efficency supreme with a large sorted this; the drawback is that this list requires to be sorted before performing the search which means that it can also be more complex to implement due to the complex nature of the algorithm (Codedamn, 2023).
+Similar to linear search; binary search also offers advantages and drawbacks. By having the time complexity of O(log)n, this makes the efficiency of the search much more supreme with large and sorted data as it can zero in on the target value. However, although having the efficiency supreme with a large sorted this; the drawback is that this list requires to be sorted before performing the search which means that it can also be more complex to implement due to the complex nature of the algorithm (Codedamn, 2023).
 
-In conclusion; the two algorithms are base on their time complexity and the restraints on how their efficiency is on the type of dataset that is implementsl; whether it is sorted or unsorted.
-If your list of recipes is small or unsorted, Linear Seach is a simple and effective choice; however if your dataset is going to be a bit more complex, larger and sorted binary is the more efficient alternative.
+In conclusion; the two algorithms are based on their time complexity and the restraints on how their efficiency is on the type of dataset that is implemented; whether it is sorted or unsorted.
+If your list of recipes is small or unsorted, Linear Search is a simple and effective choice; however if your dataset is going to be a bit more complex, a larger and sorted binary is the more efficient alternative.
 
 To understand a visual representation of these two in action, see the below;
+
 
 ![alt text](Images/binary_vs_linear.jpg)
 
@@ -75,7 +59,11 @@ To understand a visual representation of these two in action, see the below;
 
 GeeksforGeeks. (2024, April 5). Sorting Algorithms - GeeksforGeeks. GeeksforGeeks. https://www.geeksforgeeks.org/sorting-algorithms/
 
-workat.tech. (n.d.). Sorting Algorithms (Quick Sort, Merge Sort) | DSA Tutorials. [online]
+workat.tech. (n.d.). Sorting Algorithms (Quick Sort, Merge Sort) | DSA Tutorials.
+
+Dipen Dadhaniya. (2024, August 28). Difference Between Merge Sort and Quicksort. Interviewkickstart.com; Interview Kickstart LLC. https://www.interviewkickstart.com/blogs/learn/quicksort-vs-merge-sort
+
+Bisht, A. (2023, February 20). Quick Sort vs Merge Sort - GeeksforGeeks. GeeksforGeeks. https://www.geeksforgeeks.org/quick-sort-vs-merge-sort/
 
 Binary Search vs. Linear Search – Differences with examples. (2023, April 2). Codedamn News. https://codedamn.com/news/algorithms/optimizing-search-algorithms-binary-vs-linear
 
