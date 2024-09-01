@@ -65,7 +65,7 @@ Use case: Based on the example of searching for prawns in a recipe; as "p" is th
 
 An example of this code would be;
 
-)) ./binary_binary.png
+![alt text](Images/binary_recipe.png)
 
 Similar to linear search; binary search also offers advantages and drawbacks. By having the time complexity of O(log)n, this makes the efficicency of the search much more supreme with large and sorted data as it can zero in on the taget value. However, although having the efficency supreme with a large sorted this; the drawback is that this list requires to be sorted before performing the search which means that it can also be more complex to implement due to the complex nature of the algorithm (Codedamn, 2023).
 
